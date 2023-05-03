@@ -23,22 +23,47 @@ OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U
 OTROS ACUERDOS EN EL SOFTWARE.
 */
 
+/**
+ * @brief incluimos el .hpp que cuenta con la informacion de la clase
+ */
+#include "Exceptions.hpp"
 #include <iostream>
+#include <vector>
+#include <typeinfo>
 
-class MyException : public std::exception {
-public:
-  const char* what() const throw() {
-    return "My custom exception";
-  }
-};
+
+#define MAX_UNIT 400000000000ul
+
+using namespace std;
+
 
 int main() {
-
+  /**
+   * @brief try-catch maneja la excepción del tipo MyException
+   * 
+   */
   try {
     throw MyException();
-  } catch (std::exception& e) {
-    std::cout << "Error: " << e.what() << std::endl;
+  } catch (exception& e) {
+    cout << "Error: " << e.what() <<endl;
   }
+  try{
+    if 
+  }catch(bad_alloc& e){
+    cerr << "Error: Bad_alloc "<<e.what()<<endl ; 
+  }
+  try{
+    vector<int> v1{2, 8 , 27};
+    v1.at(4);
 
-  return 0;
+  }catch(out_of_range& e){
+    cerr << "Error: Out_of_range "<<e.what()<<endl;
+  }
+  try{
+    Error* prueba = nullptr;
+    typeid( *prueba ).name();
+  }catch(bad_typeid& e){
+    cout<<"Error: bad_typeid "<<e.what()<<endl;
+  }
 }
+

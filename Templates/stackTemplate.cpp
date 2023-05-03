@@ -70,12 +70,20 @@ int main() {
   s.push(2021);
   s.push(2054);
   s.push(6524);
+  Stack<char> c;
+  c.push('a');
+  c.push('b');
+  c.push('c');
+  c.push('d');
+
+
 
   std::cout << "Stack size: " << s.size() << std::endl;
 
   s.foreach([](int& value) {
     std::cout << "Value: " << value << std::endl;
   });
+
 
   try {
     while (!s.empty()) {
@@ -86,6 +94,16 @@ int main() {
   } catch (const std::exception& e) {
     std::cerr << "Exception: " << e.what() << std::endl;
   }
+  std::cout<<"Segunda pila: "<<std::endl;
+  std::cout << "Stack size: " << c.size() << std::endl;
+  while (!c.empty()) {
+      
+      std::cout << c.pop() << std::endl;
+    }
+    //std::cout<<c.pop()<<std::endl;
+    /**
+     * @brief este pop() generaría el error out of range 
+     */
 
   return 0;
 }
