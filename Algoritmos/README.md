@@ -1,16 +1,25 @@
-#Complejidad del algoritmo
+#Instrucciones de ejecución
+1. En su consola con coloque el comando "make".
+2. Presione la tecla < enter > 
+3. El programa compilara y se ejecutará por sí solo.
+
+
+
+
+
+##Complejidad del algoritmo
 
 
 1. **bubbleSort**
-La complejidad del algoritmo es O(n^2) en el peor caso y O(n) en el mejor caso, donde n es el tamaño del arreglo. En este caso, el peor caso se da cuando el arreglo está ordenado en orden inverso, mientras que el mejor caso se da cuando el arreglo ya está ordenado de forma ascendente.
+La complejidad del algoritmo es O(5^2) esto se debe a que el arreglo proporcionado no se encuentra ordenado por lo que tendrá que hacer 5 iteraciones para ordernar el arreglo.
 
 2. **selectionSort**:
-La complejidad del algoritmo es O(n^2) en todos los casos, donde n es el tamaño del arreglo. En este caso, el algoritmo siempre realiza la misma cantidad de comparaciones y asignaciones sin importar el orden del arreglo.
+La complejidad del algoritmo es O(5^2) en todos los casos. En este caso, el algoritmo siempre realiza la misma cantidad de comparaciones y asignaciones sin importar el orden del arreglo.
 
 
 3. **insertionSort**:
-La complejidad del algoritmo es O(n^2) en el peor caso y O(n) en el mejor caso, donde n es el tamaño del arreglo. En el peor caso, el arreglo está ordenado en orden inverso, y en el mejor caso, el arreglo ya está ordenado de forma ascendente.
+La complejidad del algoritmo es O(5^2) en el peor caso debido a que el arreglo se encuentra desordenado.
 
 4. **quickSort**:
 
-La complejidad del algoritmo es O(n log n) en el mejor caso y O(n^2) en el peor caso, donde n es el tamaño del arreglo. En este caso, el mejor caso se da cuando el pivote divide el arreglo en dos partes iguales, mientras que el peor caso se da cuando el pivote siempre es el mínimo o el máximo del arreglo.
+La complejidad del algoritmo es O(5log(5)) y es el mejor de los casos debido a que los datos no están ordenados.

@@ -1,6 +1,6 @@
 /**
 * @file exceptions.hpp
-* @author Jorge Loria (Jloria2703)
+* @author Jorge Loria (jloria2703)
 * @date 2023-05-02
 * 
 * @copyright 
@@ -45,9 +45,16 @@ public:
   }
 };
 
-
+/**
+ * @brief clase para el error
+ * 
+ */
 class Error{
   public:
+    /**
+     * @brief al ser virtual significa que se puede sobreescribir sobre ella. "f" al ser void no retorna nada.
+     * 
+     */
     virtual void f(){};
 };
 
