@@ -1,9 +1,9 @@
-#Instrucciones de ejecución
+# Instrucciones de ejecución
 1. En su consola con coloque el comando "make".
 2. Presione la tecla < enter > 
 3. El programa compilara y se ejecutará por sí solo.
 
-##Todas las bibliotecas son necesarias, aquí una pequeña explicación de cuando se utilizan en el código:
+## Todas las bibliotecas son necesarias, aquí una pequeña explicación de cuando se utilizan en el código:
 
 1. include < iostream > es necesaria para operaciones de entrada y salida.
 
@@ -17,7 +17,7 @@
 
 
 
-###Métodos no conocidos
+### Métodos no conocidos
 
 ``` C++
 void foreach(const std::function<void(T&)>& func) {
